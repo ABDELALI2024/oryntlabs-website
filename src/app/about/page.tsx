@@ -3,14 +3,14 @@ import { buildMetadata, JsonLd, organizationJsonLd, breadcrumbJsonLd } from "@/l
 import { AboutPageClient } from "./AboutPageClient";
 
 export const metadata: Metadata = buildMetadata({
-  title: "About OryntLabs | Digital Solutions Company in Rabat, Morocco",
-  description: "OryntLabs is a digital solutions and creative services company based in Rabat, Morocco. We help businesses and individuals with web development, software, design, branding, printing, and digital presence.",
+  title: "About OryntLabs | Digital Technology Company in Rabat, Morocco",
+  description: "OryntLabs is a Morocco-based digital technology company headquartered in Rabat, providing web development, software, AI, SaaS, design, branding and professional printing solutions.",
   path: "/about",
   locale: "en",
   keywords: [
     "about OryntLabs",
     "OryntLabs Rabat",
-    "digital solutions company Morocco",
+    "digital technology company Morocco",
     "technology company Rabat",
   ],
 });

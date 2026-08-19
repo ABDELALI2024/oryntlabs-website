@@ -202,6 +202,19 @@ export function HomePageClient({ homePath = "/" }: { homePath?: string }) {
         <div className="container-page">
           <h2 className="section-heading">{t.home.printingTitle}</h2>
           <p className="section-subheading">{t.home.printingSubtitle}</p>
+          <div className="mt-6 max-w-3xl rounded-xl border border-brand-100 bg-white p-6">
+            <p className="text-brand-700">
+              <strong>OryntLabs Printing</strong> is the professional printing division of OryntLabs, helping businesses and organizations turn their digital identity into high-quality printed materials — business cards, flyers, brochures, posters, stickers, catalogues, and custom formats.
+            </p>
+            <a
+              href={SITE.printing.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-accent-600 hover:underline"
+            >
+              Explore OryntLabs Printing →
+            </a>
+          </div>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {printingServices.map((s) => (
               <Link key={s.slug} href={localizedPath(s.slug, locale)} className="card hover:border-accent-200 hover:shadow-md transition-shadow">

@@ -3,11 +3,11 @@ import { buildMetadata, JsonLd, breadcrumbJsonLd } from "@/lib/seo";
 import { ServicesPageClient } from "./ServicesPageClient";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Digital Services Morocco | Technology, Design & Printing | OryntLabs",
-  description: "Explore OryntLabs services: web development, software, mobile apps, AI solutions, SaaS, design, branding, printing, and digital presence in Rabat, Morocco.",
+  title: "Digital Technology Services Morocco | Web, Software, AI, Design & Printing | OryntLabs",
+  description: "Explore OryntLabs services: web development, software development, AI solutions, SaaS, design, branding, printing, and digital presence in Rabat, Morocco.",
   path: "/services",
   locale: "en",
-  keywords: ["digital services Morocco", "OryntLabs services", "technology services Rabat"],
+  keywords: ["digital technology services Morocco", "OryntLabs services", "web development Rabat", "printing services Morocco"],
 });
 
 export default function ServicesPage() {

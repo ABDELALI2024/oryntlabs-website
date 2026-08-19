@@ -43,6 +43,11 @@ export function Footer() {
             <li><Link href={localizedPath("/services/design", locale)} className="hover:text-white">{t.footer.design}</Link></li>
             <li><Link href={localizedPath("/services/branding", locale)} className="hover:text-white">{t.footer.branding}</Link></li>
             <li><Link href={localizedPath("/services/printing", locale)} className="hover:text-white">{t.footer.printing}</Link></li>
+            <li>
+              <a href={SITE.printing.url} target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                {SITE.printing.name}
+              </a>
+            </li>
             <li><Link href={localizedPath("/services/domain-hosting", locale)} className="hover:text-white">{t.footer.domainHosting}</Link></li>
           </ul>
         </div>

@@ -24,24 +24,23 @@ const inter = Inter({
 
 export function generateMetadata(): Metadata {
   return buildMetadata({
-    title: "OryntLabs | Digital Solutions, Creative Services & Technology in Rabat, Morocco",
-    description: SITE.description,
+    title: "OryntLabs | Digital Technology & Business Solutions in Morocco",
+    description:
+      "OryntLabs is a Morocco-based digital technology company headquartered in Rabat, providing web development, software, AI, SaaS, digital transformation, design, branding and professional printing solutions.",
     path: "/",
     locale: "en",
     keywords: [
-      "digital solutions Morocco",
-      "digital services Rabat",
+      "digital technology Morocco",
       "web development Morocco",
       "software development Morocco",
-      "mobile app development Morocco",
       "AI solutions Morocco",
       "SaaS development Morocco",
-      "graphic design Morocco",
-      "logo design Morocco",
+      "design Morocco",
       "branding Morocco",
       "printing services Morocco",
-      "digital presence Morocco",
       "Rabat technology company",
+      "digital transformation Morocco",
+      "business solutions Morocco",
     ],
   });
 }

@@ -59,6 +59,7 @@ export function organizationJsonLd() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: SITE.name,
+    alternateName: SITE.alternateName,
     url: SITE.url,
     logo: `${SITE.url}/logo.png`,
     foundingDate: String(SITE.founded),
@@ -72,6 +73,7 @@ export function organizationJsonLd() {
     areaServed: [
       { "@type": "City", name: SITE.location.city },
       { "@type": "Country", name: SITE.location.country },
+      { "@type": "Place", name: "Worldwide" },
     ],
     contactPoint: [
       {
@@ -96,8 +98,21 @@ export function organizationJsonLd() {
       "Logo Design",
       "Branding",
       "Printing Services",
+      "Domain and Hosting",
       "Digital Presence",
+      "Business Solutions",
     ],
+    subOrganization: {
+      "@type": "Organization",
+      name: SITE.printing.name,
+      url: SITE.printing.url,
+      description: SITE.printing.description,
+      parentOrganization: {
+        "@type": "Organization",
+        name: SITE.name,
+        url: SITE.url,
+      },
+    },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "OryntLabs Services",
@@ -135,6 +150,15 @@ export function organizationJsonLd() {
             { "@type": "Offer", itemOffered: { "@type": "Service", name: "Poster Printing" } },
             { "@type": "Offer", itemOffered: { "@type": "Service", name: "Sticker Printing" } },
             { "@type": "Offer", itemOffered: { "@type": "Service", name: "Custom Printing" } },
+          ],
+        },
+        {
+          "@type": "OfferCatalog",
+          name: "Digital Presence",
+          itemListElement: [
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Domain & Hosting" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Digital Presence" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Google Business Profile" } },
           ],
         },
       ],
@@ -194,6 +218,7 @@ export function websiteJsonLd() {
     publisher: {
       "@type": "Organization",
       name: SITE.name,
+      url: SITE.url,
     },
   };
 }

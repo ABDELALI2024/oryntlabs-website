@@ -1,5 +1,6 @@
 export const SITE = {
   name: "OryntLabs",
+  alternateName: "Orynt Labs",
   url: "https://oryntlabs.com",
   locale: "en_US",
   defaultLocale: "en" as const,
@@ -11,11 +12,11 @@ export const SITE = {
     region: "Rabat-Sale-Kenitra",
   },
   founded: 2024,
-  entityType: "Digital Solutions & Creative Services Company",
+  entityType: "Digital Technology Company",
   description:
-    "OryntLabs is a digital solutions and creative services company based in Rabat, Morocco. We help businesses and individuals with web development, software development, mobile app development, AI solutions, SaaS development, digital transformation, graphic design, logo design, branding, social media design, CV design, printing services, domain and hosting, and digital presence.",
+    "OryntLabs is a Morocco-based digital technology company headquartered in Rabat, providing web development, software development, AI solutions, SaaS development, digital transformation, design, branding and professional printing services.",
   shortDescription:
-    "Digital solutions, creative services, and technology for businesses and individuals in Morocco.",
+    "Digital technology and business solutions for companies and individuals in Morocco and worldwide.",
   email: "oryntlabs@gmail.com",
   phone: "+212680207045",
   phoneLocal: "0680207045",
@@ -28,6 +29,12 @@ export const SITE = {
     instagram: "",
     linkedin: "",
     twitter: "",
+  },
+  printing: {
+    name: "OryntLabs Printing",
+    url: "https://printing.oryntlabs.com",
+    description:
+      "OryntLabs Printing is the professional printing division of OryntLabs, providing business printing, marketing materials, signage, stickers, brochures, business cards, posters and custom printing services.",
   },
 } as const;
 
@@ -115,9 +122,44 @@ export const serviceCategories = [
 
 export const globalFaqs: FAQ[] = [
   {
-    question: "What digital services does OryntLabs provide?",
+    question: "What is OryntLabs?",
     answer:
-      "OryntLabs provides web development, custom software development, mobile app development, AI solutions, SaaS development, digital transformation, graphic design, logo design, branding, social media design, CV design, business card design, printing services (business cards, flyers, brochures, posters, stickers, catalogues, custom printing), domain and hosting, and digital presence support for businesses and individuals in Morocco.",
+      "OryntLabs is a Morocco-based digital technology company headquartered in Rabat, providing web development, software development, AI solutions, SaaS development, digital transformation, design, branding and professional printing services for businesses and individuals.",
+  },
+  {
+    question: "Where is OryntLabs based?",
+    answer:
+      "OryntLabs is based in Rabat, Morocco. We serve clients locally in Rabat and across Morocco, and can support remote projects worldwide.",
+  },
+  {
+    question: "What services does OryntLabs provide?",
+    answer:
+      "OryntLabs provides web development, custom software development, mobile app development, AI solutions, SaaS development, digital transformation, graphic design, logo design, branding, printing services, domain and hosting, and digital presence support.",
+  },
+  {
+    question: "Does OryntLabs offer web development?",
+    answer:
+      "Yes. OryntLabs designs and develops business websites, portfolio sites, web applications, and e-commerce platforms tailored to your goals. All websites are built with SEO-friendly structure and mobile-first design.",
+  },
+  {
+    question: "Does OryntLabs provide AI solutions?",
+    answer:
+      "Yes. OryntLabs builds AI-powered features, automation workflows, and intelligent product capabilities as part of broader digital solutions. AI is one part of our broader services that also include design, printing, and digital presence.",
+  },
+  {
+    question: "Does OryntLabs offer printing services?",
+    answer:
+      "Yes. OryntLabs provides business card printing, flyer printing, brochure printing, poster printing, sticker printing, and custom printing for businesses and individuals in Rabat and across Morocco.",
+  },
+  {
+    question: "What is OryntLabs Printing?",
+    answer:
+      "OryntLabs Printing is the professional printing division of OryntLabs. It provides business printing, marketing materials, signage, stickers, brochures, business cards, posters and custom printing services. The printing division operates at printing.oryntlabs.com.",
+  },
+  {
+    question: "Is OryntLabs Printing part of OryntLabs?",
+    answer:
+      "Yes. OryntLabs Printing is the professional printing division of OryntLabs, a Morocco-based digital technology company. OryntLabs Printing is part of the same organization and operates as its dedicated printing service.",
   },
   {
     question: "Does OryntLabs work with businesses?",
@@ -130,34 +172,9 @@ export const globalFaqs: FAQ[] = [
       "Yes. OryntLabs helps individuals with personal websites, portfolio sites, CV design, branding, business cards, and professional online presence.",
   },
   {
-    question: "Does OryntLabs create websites?",
-    answer:
-      "Yes. OryntLabs designs and develops business websites, portfolio sites, web applications, and e-commerce platforms tailored to your goals. All websites are built with SEO-friendly structure and mobile-first design.",
-  },
-  {
-    question: "Does OryntLabs provide AI solutions?",
-    answer:
-      "Yes. OryntLabs builds AI-powered features, automation workflows, and intelligent product capabilities as part of broader digital solutions. AI is one part of our broader services that also include design, printing, and digital presence.",
-  },
-  {
-    question: "Does OryntLabs provide printing services?",
-    answer:
-      "Yes. OryntLabs offers business card printing, flyer printing, brochure printing, poster printing, sticker printing, catalogue printing, and custom printing for businesses and individuals in Rabat and across Morocco.",
-  },
-  {
-    question: "Where is OryntLabs located?",
-    answer:
-      "OryntLabs is based in Rabat, Morocco. We serve clients locally in Rabat and across Morocco, and can support remote projects where appropriate.",
-  },
-  {
     question: "How can I request a quote from OryntLabs?",
     answer:
       "Use the OryntLabs contact form at oryntlabs.com/contact to select your service, describe your project, and submit your details. You can also reach us by email at oryntlabs@gmail.com or WhatsApp at 0680207045. We typically respond within 24 hours.",
-  },
-  {
-    question: "What is OryntLabs?",
-    answer:
-      "OryntLabs is a digital solutions and creative services company based in Rabat, Morocco. Founded in 2024, we help businesses and individuals with technology, design, branding, printing, and digital presence.",
   },
   {
     question: "Does OryntLabs serve clients outside Morocco?",

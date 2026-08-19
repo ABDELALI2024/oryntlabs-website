@@ -422,7 +422,7 @@ export const services: Record<string, Service> = {
     slug: "printing",
     title: "Printing Services",
     h1: "Printing Services in Morocco",
-    intro: "Complete printing services for businesses and individuals in Rabat and across Morocco — from business cards to custom print projects.",
+    intro: "OryntLabs Printing is the professional printing division of OryntLabs, providing business printing, marketing materials, signage, stickers, brochures, business cards, posters and custom printing services for businesses and individuals in Rabat and across Morocco.",
     valueProposition: "Design and print in one place, with quality materials and clear quote-based pricing.",
     category: "printing",
     audience: "both",
@@ -446,9 +446,9 @@ export const services: Record<string, Service> = {
     ],
     relatedSlugs: ["digital-printing", "business-card-printing", "custom-printing"],
     metadata: {
-      title: "Printing Services Morocco | Digital & Custom Print | OryntLabs",
-      description: "Printing services in Morocco. Business cards, flyers, brochures, posters, and custom printing in Rabat. Request a print quote.",
-      keywords: ["printing services Morocco", "print shop Rabat"],
+      title: "OryntLabs Printing | Professional Printing Services in Morocco",
+      description: "OryntLabs Printing is the professional printing division of OryntLabs. Business cards, flyers, brochures, posters, and custom printing in Rabat, Morocco. Request a print quote.",
+      keywords: ["printing services Morocco", "OryntLabs Printing", "print shop Rabat"],
     },
   }),
 

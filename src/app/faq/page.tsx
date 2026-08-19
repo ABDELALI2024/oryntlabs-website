@@ -4,11 +4,11 @@ import { globalFaqs } from "@/lib/site";
 import { FAQPageClient } from "./FAQPageClient";
 
 export const metadata: Metadata = buildMetadata({
-  title: "FAQ | OryntLabs Digital Services Morocco",
-  description: "Frequently asked questions about OryntLabs web development, design, branding, printing, AI solutions, and digital presence services in Morocco.",
+  title: "FAQ | OryntLabs Digital Technology & Business Solutions",
+  description: "Answers to common questions about OryntLabs web development, software, AI solutions, design, branding, printing services and digital presence in Morocco.",
   path: "/faq",
   locale: "en",
-  keywords: ["OryntLabs FAQ", "digital services questions Morocco", "web development FAQ"],
+  keywords: ["OryntLabs FAQ", "digital technology questions Morocco", "web development FAQ", "printing services FAQ"],
 });
 
 export default function FAQPage() {
