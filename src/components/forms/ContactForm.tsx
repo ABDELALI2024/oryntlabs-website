@@ -69,7 +69,7 @@ export function ContactForm({ defaultService }: { defaultService?: string }) {
     const formData = new FormData(form);
     const message = buildWhatsAppMessage(formData);
     const encoded = encodeURIComponent(message);
-    window.open(`${SITE.whatsappUrl}&text=${encoded}`, "_blank", "noopener,noreferrer");
+    window.open(`${SITE.whatsappUrl}?text=${encoded}`, "_blank", "noopener,noreferrer");
     setSubmitted(true);
   }
 
