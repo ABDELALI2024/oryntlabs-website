@@ -43,7 +43,7 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-brand-100 bg-white/95 backdrop-blur">
       <div className="container-page flex h-14 items-center justify-between gap-3 sm:h-16 sm:gap-4">
         <Link href={localizedPath("/", locale)} className="flex items-center gap-2 min-h-[44px]">
-          <Image src="/logo.png" alt="OryntLabs" width={36} height={36} className="rounded-md" priority />
+          <Image src="/logo.png" alt="OryntLabs" width={36} height={36} className="rounded-md" priority quality={90} sizes="36px" />
           <span className="text-lg font-bold text-brand-950 hidden sm:inline">
             Orynt<span className="text-accent-600">Labs</span>
           </span>

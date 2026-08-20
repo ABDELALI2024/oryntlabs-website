@@ -5,10 +5,18 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
   }
 
   body {
     @apply bg-white text-brand-900 antialiased;
+    overflow-x: hidden;
+  }
+
+  img, video {
+    @apply max-w-full h-auto;
   }
 
   :focus-visible {
@@ -39,6 +47,7 @@
 
   .btn {
     @apply inline-flex items-center justify-center rounded-lg px-5 py-2.5 text-sm font-semibold transition-colors min-h-[44px];
+    touch-action: manipulation;
   }
 
   .btn-primary {
