@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useLanguage } from "@/lib/i18n/LanguageProvider";
+import { SITE } from "@/lib/site";
 
 const serviceOptions = [
   "Website",
@@ -15,12 +16,60 @@ const serviceOptions = [
   "Other",
 ];
 
+const budgetLabels: Record<string, string> = {
+  "": "",
+  "under-5k": "Under 5,000 MAD",
+  "5k-15k": "5,000 - 15,000 MAD",
+  "15k-plus": "15,000+ MAD",
+};
+
+const timelineLabels: Record<string, string> = {
+  "": "",
+  "urgent": "Urgent",
+  "1-3-months": "1-3 months",
+  "3-plus-months": "3+ months",
+};
+
+function buildWhatsAppMessage(data: FormData): string {
+  const service = data.get("service") as string;
+  const description = data.get("description") as string;
+  const name = data.get("name") as string;
+  const email = data.get("email") as string;
+  const phone = data.get("phone") as string;
+  const company = data.get("company") as string;
+  const budget = data.get("budget") as string;
+  const timeline = data.get("timeline") as string;
+
+  const lines: string[] = [];
+  lines.push("*New Quote Request*");
+  lines.push("");
+  lines.push(`*Name:* ${name}`);
+  if (company) lines.push(`*Company:* ${company}`);
+  lines.push(`*Email:* ${email}`);
+  if (phone) lines.push(`*Phone:* ${phone}`);
+  lines.push("");
+  lines.push(`*Service:* ${service}`);
+  lines.push(`*Project Description:* ${description}`);
+  if (budget && budgetLabels[budget]) lines.push(`*Budget:* ${budgetLabels[budget]}`);
+  if (timeline && timelineLabels[timeline]) lines.push(`*Timeline:* ${timelineLabels[timeline]}`);
+  lines.push("");
+  lines.push("---");
+  lines.push(`Sent via ${SITE.url}`);
+
+  return lines.join("\n");
+}
+
 export function ContactForm({ defaultService }: { defaultService?: string }) {
   const [submitted, setSubmitted] = useState(false);
   const { t } = useLanguage();
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const message = buildWhatsAppMessage(formData);
+    const encoded = encodeURIComponent(message);
+    window.open(`${SITE.whatsappUrl}&text=${encoded}`, "_blank", "noopener,noreferrer");
     setSubmitted(true);
   }
 
